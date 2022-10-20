@@ -14,7 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "remix";
 
-const pages = ["Posts", "Pricing", "Blog"];
+const pages = ["About", "Membership", "Write", "Login"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 type Props = {};

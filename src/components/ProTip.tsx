@@ -1,6 +1,6 @@
-import Link from '@mui/material/Link';
-import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
-import Typography from '@mui/material/Typography';
+import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
+import Typography from "@mui/material/Typography";
+import { Link } from "remix";
 
 function LightBulbIcon(props: SvgIconProps) {
   return (
@@ -12,10 +12,13 @@ function LightBulbIcon(props: SvgIconProps) {
 
 export default function ProTip() {
   return (
-    <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
-      <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
-      Pro tip: See more <Link href="https://mui.com/getting-started/templates/">templates</Link> on
-      the MUI documentation.
+    <Typography sx={{ mt: 6, mb: 2 }} color="text.secondary" align="center">
+      <LightBulbIcon sx={{ mr: 1, verticalAlign: "middle" }} />
+      Pro tip: See more{" "}
+      <Link to="/explore" style={{ color: "#556cd6" }}>
+        Explore
+      </Link>
+      .
     </Typography>
   );
 }
